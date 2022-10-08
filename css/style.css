@@ -1,0 +1,179 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: Arial;
+	font-size: 14px;
+}
+a {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+.container {
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
+	justify-content: space-between;
+}
+nav {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+nav div {
+	margin: 1%;
+}
+nav div a {
+	padding: 8px;
+	color: gray;
+}
+
+.avatar img {
+	border-radius: 50%;
+}
+
+.app_icon {
+	width: 1.8rem;
+	height: 1.8rem;
+}
+main {
+	text-align: center;
+	margin-bottom: 160px;
+}
+.logo {
+	margin: 2rem 0;
+}
+
+.image_toggle {
+	display: none;
+}
+
+.search_logo {
+	height: 1.5rem;
+	width: 1.5rem;
+	margin: 5px;
+	padding: 1px;
+}
+
+.mic {
+	cursor: pointer;
+}
+.clear-all {
+	display: none;
+}
+.input_container {
+	display: flex;
+	justify-content: center;
+	margin: 2rem 0;
+}
+.input_container span {
+	border: 1px solid #dfe1e5;
+	display: flex;
+	justify-content: space-between;
+	padding: 2px;
+	border-radius: 24px;
+	width: 580px;
+	transition: all 0s ease 0s;
+}
+
+.input_container span:hover {
+	box-shadow: rgba(32, 33, 36, 0.28) 0px 1px 6px 0px;
+}
+
+.input_container input {
+	width: 500px;
+	padding: 0;
+	margin: 0;
+	border: transparent;
+	background-color: transparent;
+	outline: none;
+	font-size: 16px;
+}
+
+button {
+	background-color: #f8f9fa;
+	border: 1px solid #f8f9fa;
+	border-radius: 4px;
+	color: #3c4043;
+	font-family: arial, sans-serif;
+	margin: 11px 4px;
+	padding: 0 16px;
+	line-height: 27px;
+	height: 36px;
+	min-width: 54px;
+	text-align: center;
+	cursor: pointer;
+	user-select: none;
+}
+button:hover {
+	box-shadow: rgba(32, 33, 36, 0.28) 0px 1px 6px 0px;
+}
+.google-offered {
+	margin: 20px;
+	font-size: 12px;
+	color: #70757a;
+	font-size: small;
+}
+.google-offered a {
+	margin: 6px;
+	color: #1a0dab;
+	font-size: small;
+}
+
+.nigeria {
+	padding: 15px 25px;
+	background-color: #f2f2f2;
+	border-bottom: 1px solid #dadce0;
+	color: #70757a;
+}
+
+.footer-flex {
+	display: flex;
+	justify-content: space-evenly;
+	padding: 8px;
+	background-color: #f2f2f2;
+	color: #70757a;
+	flex-wrap: wrap;
+}
+.footer-flex div {
+	padding: 15px;
+}
+.footer-flex div a {
+	padding: 10px;
+	color: #70757a;
+}
+
+#valueUpdate {
+	font-size: 100px;
+	color: lightseagreen;
+	font-family: "Courier New", Courier, monospace;
+}
+
+@media only screen and (max-width: 1200px) {
+	main {
+		margin-bottom: 2px;
+	}
+
+	.carbon {
+		display: flex;
+		order: 1;
+		width: 100%;
+		justify-content: center;
+		align-self: center;
+		padding-bottom: 10px;
+	}
+	.about {
+		order: 2;
+	}
+	.privacy {
+		order: 3;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	.input_container span {
+		width: 450px;
+	}
+}
